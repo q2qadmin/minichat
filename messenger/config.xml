@@ -4,15 +4,15 @@
 	id		= "com.you.www"
 	version 	= "1.0.0">
 
-	<name>Your Mind Blowing App</name>
+	<name>Mini Chat</name>
 
 	<description>
-		A brilliant mobile application written by you and now available on every platform thanks to Kendo UI Mobile and PhoneGap Build.
+		A brilliant mobile application enable you chat in realtime with your mobile phone.
 	</description>
 
 	<author href="build.phonegap.com"
-		email="">
-		Mr. Mobile Madness
+		email="admin@q2qconsulting.com.au ">
+		The administrator of q2q consulting Pty Ltd australia.
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
