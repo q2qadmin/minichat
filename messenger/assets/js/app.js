@@ -3,6 +3,9 @@
 var MYAPP = MYAPP || {};
 
 MYAPP.run = (function () {
+    $(document).bind("mobileinit", function(){
+      $.mobile.metaViewportContent = "width=device-width, minimum-scale=1, maximum-scale=2";
+    });
     //setup orientation detector
     window.onorientationchange = function () {
         //Need at least 800 milliseconds
