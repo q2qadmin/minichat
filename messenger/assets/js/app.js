@@ -2,7 +2,12 @@
 // it doesn't polute the global namespace
 var MYAPP = MYAPP || {};
 
-MYAPP.run = (function() {
+MYAPP.run = (function () {
+    //setup orientation detector
+    window.onorientationchange = function () {
+        //Need at least 800 milliseconds
+        setTimeout(MYAPP.onorientationchange, 1000);
+    }
 	// create the Kendo UI Mobile application
     MYAPP.app = new kendo.mobile.Application(document.body, { transition: "slide" }); 
 });
@@ -29,6 +34,18 @@ MYAPP.reddit = kendo.data.DataSource.create({
   }
 });
 
+MYAPP.onorientationchange = function changeOrientation() {
+    switch (window.orientation) {
+        case 0: // portrait, home bottom
+        case 180: // portrait, home top
+            alert("portrait H: " + $(window).height() + " W: " + $(window).width());
+            break;
+        case -90: // landscape, home left
+        case 90: // landscape, home right
+            alert("landscape H: " + $(window).height() + " W: " + $(window).width());
+            break;
+    }
+};
 
 // this function runs at startup and attaches to the 'deviceready' event
 // which is fired by PhoneGap when the hardware is ready for native API
