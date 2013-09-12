@@ -1,13 +1,13 @@
 // this global variable is where all the script goes so that
 // it doesn't polute the global namespace
 var MYAPP = MYAPP || {};
-//var myScroll = myScroll || {};
+var myScroll = myScroll || {};
 
 MYAPP.run = (function () {
     //enable zoom
-    //myScroll = new iScroll('wrapper', { zoom: true });
+    myScroll = new iScroll('wrapper', { zoom: true });
 
-    //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
     //setup orientation detector
     window.onorientationchange = function () {
