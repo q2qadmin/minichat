@@ -21,6 +21,6 @@
 
 	<preference name="orientation" value="default" />
   
-  <preference name="EnableViewportScale" value="true" />
+  <preference name="EnableViewportScale" value="yes" />
 
 </widget>
