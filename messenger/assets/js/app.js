@@ -5,7 +5,7 @@ var myScroll = myScroll || {};
 
 MYAPP.run = (function () {
     //enable zoom
-    myScroll = new iScroll('main', { zoom: true });
+    myScroll = new iScroll('main', { zoom: true, zoomMax: 4 });
 
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
