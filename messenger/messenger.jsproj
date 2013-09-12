@@ -57,6 +57,7 @@
   <ItemGroup>
     <Content Include="assets\css\master.css" />
     <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\iscroll.js" />
     <Content Include="assets\js\jquery.min.js" />
     <Content Include="config.xml" />
     <Content Include="icon.png" />
