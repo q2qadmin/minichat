@@ -7,7 +7,7 @@ MYAPP.run = (function () {
     window.onorientationchange = function () {
         //Need at least 800 milliseconds
         setTimeout(MYAPP.onorientationchange, 1000);
-    }
+    };
 	// create the Kendo UI Mobile application
     MYAPP.app = new kendo.mobile.Application(document.body, { transition: "slide" }); 
 });
