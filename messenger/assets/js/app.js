@@ -4,7 +4,7 @@ var MYAPP = MYAPP || {};
 
 MYAPP.run = (function () {
     //setup pinch zoom
-    $('#main').fidget({zoomThis:true});
+    $('#homeView').fidget({zoomThis:true});
     //setup orientation detector
     window.onorientationchange = function () {
         //Need at least 800 milliseconds

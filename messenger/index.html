@@ -24,7 +24,7 @@
 	<body>
  		<!-- The "layout" defines the common navbar and footer. Views are then swapped
  			 out as the content between this common header and footer -->
-		<div id="main" data-role="layout" data-id="main-layout">
+		<div data-role="layout" data-id="main-layout">
 			<div data-role="header">
 				<div data-role="navbar">
 					<span data-role="view-title"></span>
@@ -43,7 +43,7 @@
 			 data-layout="main-layout" where "main-layout" is the data-id of the desired
 			 layout -->
 
-		<div data-role="view" data-show="MYAPP.show" data-layout="main-layout" id="home" data-title="Home">
+		<div id="homeView" data-role="view" data-show="MYAPP.show" data-layout="main-layout" id="home" data-title="Home">
 			<p>Home</p>
 			<ul data-role="listview" data-style="inset" data-template="reddit-template" data-source="MYAPP.reddit"></ul>			
 		</div>
