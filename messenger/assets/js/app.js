@@ -10,8 +10,6 @@ MYAPP.run = (function () {
     };
 	// create the Kendo UI Mobile application
     MYAPP.app = new kendo.mobile.Application(document.body, { transition: "slide" });
-    //setup pinch zoom
-    $('#homeView').fidget({ zoomThis: true });
 });
 
 // this is called when the intial view shows. it prevents the flash
