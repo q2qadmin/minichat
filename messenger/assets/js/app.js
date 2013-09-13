@@ -3,15 +3,15 @@
 var MYAPP = MYAPP || {};
 
 MYAPP.run = (function () {
-    //setup pinch zoom
-    $('#homeView').fidget({zoomThis:true});
     //setup orientation detector
     window.onorientationchange = function () {
         //Need at least 800 milliseconds
         setTimeout(MYAPP.onorientationchange, 1000);
     };
 	// create the Kendo UI Mobile application
-    MYAPP.app = new kendo.mobile.Application(document.body, { transition: "slide" }); 
+    MYAPP.app = new kendo.mobile.Application(document.body, { transition: "slide" });
+    //setup pinch zoom
+    $('#homeView').fidget({ zoomThis: true });
 });
 
 // this is called when the intial view shows. it prevents the flash
